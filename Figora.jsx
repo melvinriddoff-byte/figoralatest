@@ -6,9 +6,9 @@ import Process from "./components/Process";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import founderImg from "./assets/fignew.png";
-import vid1 from "./assets/vid1.mp4";
-import vid2 from "./assets/vid2.mp4";
-import vid3 from "./assets/vid3.mp4";
+import vid1 from "./assets/feature1.mp4";
+import vid2 from "./assets/feature2.mp4";
+import vid3 from "./assets/feature3.mp4";
 import heVid from "./assets/he.mp4";
 
 const WA_ICON = (
