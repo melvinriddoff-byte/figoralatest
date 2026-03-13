@@ -61,7 +61,7 @@ nav{
 .nav-logo{font-family:'Product Sans',sans-serif;font-weight:700;font-size:20px;letter-spacing:0.04em;color:var(--white);text-transform:uppercase;}
 .nav-links{display:flex;gap:32px;list-style:none}
 .nav-links a{color:var(--grey);text-decoration:none;font-size:15px;font-weight:400;letter-spacing:0.02em;transition:color .2s}
-.nav-links a:hover{color:var(--white)}
+.nav-links a:hover{color:#D0FF00}
 .nav-btn, .wa-btn, .p-cta, .liquid-btn {
   position: relative;
   display: inline-flex;
@@ -113,9 +113,9 @@ nav{
 
 .ham-btn{display:none}
 
-.hero{min-height:100svh;width:100%;padding:0;position:relative;overflow:hidden;}
+.hero{min-height:100dvh;width:100%;padding:0;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
 .hero-video-container{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;}
-.hero-video-container video{width:100%;height:100%;object-fit:cover;object-position:center;}
+.hero-video-container video{width:100%;height:100%;object-fit:cover;object-position:center;display:block;}
 .hero::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.3);pointer-events:none;z-index:0;}
 .hero-bottom-content{position:absolute;bottom:0;left:0;width:100%;display:flex;justify-content:center;padding-bottom:40px;z-index:1;}
 .hero-left{max-width:840px;width:100%;}
@@ -321,7 +321,7 @@ footer{background:#0c0c0cf2;padding:60px 40px 40px;display:grid;grid-template-co
   .nav-links.nav-open li{border-bottom:1px solid var(--border)}
   .nav-links.nav-open li:last-child{border-bottom:none}
   .nav-links.nav-open a{display:block;padding:14px 0;font-size:16px;color:var(--grey)}
-  .hero{min-height:100svh;padding:0;}
+  .hero{min-height:100dvh;padding:0;}
   .hero-bottom-content{padding-bottom:30px;}
   .sec,.show-before,.founder,.about,.services,.final-cta{padding:70px 20px}
   .problem-grid,.testi-grid,.about-grid,.founder-grid,.pb-band,.services-intro-grid{grid-template-columns:1fr;gap:36px}
@@ -537,7 +537,7 @@ export default function Figora() {
 
       {/* ── FOUNDER ── */}
       <section className="sec founder">
-        <div className="sec-label reveal">From the founder</div>
+        <div className="sec-label reveal">From the Team</div>
         <div className="founder-grid">
           <div className="founder-img reveal">
             <img src={founderImg} alt="Founder" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
