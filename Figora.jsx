@@ -6,9 +6,9 @@ import Process from "./components/Process";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import founderImg from "./assets/fignew.png";
-import vid1 from "./assets/feature1.mp4";
-import vid2 from "./assets/feature2.mp4";
-import vid3 from "./assets/feature3.mp4";
+import video1 from "./assets/feature1.mp4";
+import video2 from "./assets/feature2.mp4";
+import video3 from "./assets/feature3.mp4";
 import heVid from "./assets/he.mp4";
 
 const WA_ICON = (
@@ -517,9 +517,9 @@ export default function Figora() {
         </div>
         <div className="show-grid">
           {[
-            { src: vid1, tag: "Reel · Campaign", delay: "" },
-            { src: vid2, tag: "Brand Content", delay: ".08s" },
-            { src: vid3, tag: "Paid Ads", delay: ".16s" },
+            { src: video1, tag: "Reel · Campaign", delay: "" },
+            { src: video2, tag: "Brand Content", delay: ".08s" },
+            { src: video3, tag: "Paid Ads", delay: ".16s" },
           ].map(({ src, tag, delay }) => (
             <div className="show-card reveal" key={tag} style={delay ? { transitionDelay: delay } : {}}>
               <video src={src} autoPlay muted loop playsInline style={{ width: "100%", height: "100%", objectFit: "cover" }} />
